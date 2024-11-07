@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(248 250 252 / var(--tw-bg-opacity)) /* #f8fafc */;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat";
+}
+
+p,
+a,
+button {
+  font-family: "Inter";
+}
+
+header {
+  background-color: #1a151133;
+  width: 100%;
+  height: auto;
+}
+
+.hero-image {
+  background-image: url("../images/hero-img.png");
+  background-color: antiquewhite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .top-bar li {
+  position: relative;
+}
+
+header .top-bar li .sub-menu {
+  display: none;
+  position: absolute;
+  width: 200px;
+  top: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #fff;
+  box-shadow: 1px 1px 10px rbgba(0, 0, 0, 0.1);
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.top-bar li:hover,
+.current_page_item {
+  border-bottom: 1px solid #f26800;
+}
+
+header .top-bar li .sub-menu a {
+  color: #111;
+  padding: 0.25rem;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+
+header .top-bar > .menu-item-has-children:hover > .sub-menu {
+  display: block;
+}
+
+header
+  .top-bar
+  .menu-item-has-children
+  .sub-menu
+  > .menu-item-has-children:hover
+  .sub-menu {
+  display: block;
+}
+
+header .top-bar .sub-menu li .sub-menu {
+  left: -100%;
+  /* background-color: aquamarine; */
+  top: 0%;
+}
+
+.single-page h1 {
+  font-size: 32px;
+  font-weight: medium;
+}
+.single-page h2 {
+}
+
+.single-page p {
+  line-height: 184%;
+}
+
+#comment {
+  border: 1px solid #111;
+  border-radius: 0.25rem;
+}
+
+.widget {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.widget ul li {
+  border: none;
+}
+
+/* input #s {
+  color: #111 !important;
+} */
+
+#search-input {
+  color: #fff !important;
+  border-radius: 20px;
+  padding: 0 10px;
+  background-color: transparent;
+  border: 1px solid #f26800;
+}
+
+#search-input:focus #search-input::selection {
+  border: 1px solid #f26800;
+}
+
+#searchsubmit {
+  margin-left: 5px;
+  background-color: #f26800;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-family: "Inter";
+}
+
+#searchsubmit:hover {
+  background-color: #e7914e;
+}

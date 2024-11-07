@@ -1,0 +1,1 @@
+add file name screenshot.png file with resolution 1200*900 to add a image/thumnail to the theme
